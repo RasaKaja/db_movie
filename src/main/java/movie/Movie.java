@@ -13,6 +13,13 @@ public class Movie {
         this.yearOfRelease = yearOfRelease;
     }
 
+    public Movie(int id, String title, String genre, int yearOfRelease){
+        this.id = id;
+        this.title = title;
+        this.genre = genre;
+        this.yearOfRelease = yearOfRelease;
+    }
+
     public int getId(){
         return id;
     }

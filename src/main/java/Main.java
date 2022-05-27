@@ -21,7 +21,7 @@ public class Main {
             System.out.println("""
                     What would you like to do?
                     1. add movie
-                    2. update movie by title (or id)
+                    2. update movie by id
                     3. delete movie by id                    
                     4. show all movies
                     0. QUIT the program
@@ -31,16 +31,16 @@ public class Main {
 
             switch (input){
                 case "1":
-                    //add movie
+                    movieControler.addMovie();
                     break;
                 case "2":
-                    //update movie
+                    movieControler.updateMovie();
                     break;
                 case "3":
-                    //delete movie
+                    movieControler.deleteById();
                     break;
                 case "4":
-                    //show all movies
+                    movieControler.allMovie();
                     break;
                 default:
                     System.out.println("Please enter a valid value.");
@@ -52,7 +52,7 @@ public class Main {
 }
 
 
-//add any three records to the MOVIES table
+
 //update one selected record (use the PreparedStatement)
 //delete selected record with specified id
 //display all other records in the database
