@@ -20,13 +20,15 @@ public class Movie {
         this.yearOfRelease = yearOfRelease;
     }
 
+    public Movie(){}
+
     public int getId(){
         return id;
     }
 
     @Override
     public String toString() {
-        return "Movie id " + id + ", title='" + title + ", genre='" + genre + ", yearOfRelease=" + yearOfRelease;
+        return "Movie id " + id + ", title= " + title + ", genre= " + genre + ", yearOfRelease= " + yearOfRelease;
     }
 }
 
